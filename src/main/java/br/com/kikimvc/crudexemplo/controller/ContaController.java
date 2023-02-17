@@ -1,12 +1,18 @@
 package br.com.kikimvc.crudexemplo.controller;
 
+import br.com.kikimvc.crudexemplo.modelo.Conta;
+import br.com.kikimvc.crudexemplo.modelo.EnumTipoConta;
+import br.com.kikimvc.crudexemplo.modelo.Pessoa;
 import br.com.kikimvc.crudexemplo.repositorios.ContaRepository;
 import br.com.kikimvc.crudexemplo.repositorios.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
+import java.util.List;
 
 @Controller
 @RequestMapping("/sistema/conta")
